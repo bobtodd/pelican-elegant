@@ -14,6 +14,13 @@
         <meta name="author" content="{{ AUTHOR }}" />
         <meta name="copyright" content="{{ AUTHOR }}" />
         {% endif %}
+        
+        
+        <!-- Include for use of IPython Notebook via Liquid Tags plugin -->
+        {% if EXTRA_HEADER %}
+        	{{ EXTRA_HEADER }}
+        {% endif %}
+
 
         {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
         {% if SITE_DESCRIPTION %}
