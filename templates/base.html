@@ -17,8 +17,8 @@
         
         
         <!-- Include for use of IPython Notebook via Liquid Tags plugin -->
-        {% if EXTRA_HEADER %}
-        	{{ EXTRA_HEADER }}
+        {% if 'liquid_tags.notebook' in PLUGINS %}
+        	{% include '_includes/liquid_tags_nb_header.html' %}
         {% endif %}
 
 
